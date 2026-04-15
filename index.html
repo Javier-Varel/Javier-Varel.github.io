@@ -1,0 +1,98 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font-sans); color: var(--color-text-primary); background: transparent; }
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; border-bottom: 0.5px solid var(--color-border-tertiary); position: sticky; top: 0; background: var(--color-background-primary); z-index: 10; }
+  nav .logo { font-size: 15px; font-weight: 500; }
+  nav .links { display: flex; gap: 1.5rem; }
+  nav .links a { font-size: 14px; color: var(--color-text-secondary); text-decoration: none; }
+  nav .links a:hover { color: var(--color-text-primary); }
+  section { padding: 3rem 2rem; max-width: 760px; margin: 0 auto; }
+  .hero { padding-top: 4rem; padding-bottom: 4rem; }
+  .hero .tag { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 0.75rem; letter-spacing: 0.04em; }
+  .hero h1 { font-size: 32px; font-weight: 500; line-height: 1.25; margin-bottom: 1rem; }
+  .hero p { font-size: 16px; color: var(--color-text-secondary); line-height: 1.7; max-width: 520px; }
+  .hero .cta { display: inline-block; margin-top: 1.5rem; padding: 10px 20px; border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); font-size: 14px; color: var(--color-text-primary); text-decoration: none; background: transparent; cursor: pointer; }
+  .hero .cta:hover { background: var(--color-background-secondary); }
+  .section-label { font-size: 12px; font-weight: 500; letter-spacing: 0.08em; color: var(--color-text-tertiary); text-transform: uppercase; margin-bottom: 1.5rem; }
+  .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); }
+  .about p { font-size: 15px; color: var(--color-text-secondary); line-height: 1.8; }
+  .skills-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1rem; }
+  .skill-tag { font-size: 13px; padding: 5px 12px; border-radius: 99px; border: 0.5px solid var(--color-border-tertiary); color: var(--color-text-secondary); background: var(--color-background-secondary); }
+  .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 12px; }
+  .project-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.25rem; }
+  .project-card .proj-label { font-size: 12px; color: var(--color-text-tertiary); margin-bottom: 0.5rem; }
+  .project-card h3 { font-size: 15px; font-weight: 500; margin-bottom: 0.5rem; }
+  .project-card p { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; }
+  .project-card .proj-stack { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 0.75rem; }
+  .project-card .proj-stack span { font-size: 11px; padding: 3px 8px; border-radius: 99px; background: var(--color-background-secondary); color: var(--color-text-secondary); border: 0.5px solid var(--color-border-tertiary); }
+  .contact p { font-size: 15px; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 1.5rem; }
+  .contact-links { display: flex; gap: 12px; flex-wrap: wrap; }
+  .contact-links a { font-size: 14px; padding: 9px 18px; border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); color: var(--color-text-primary); text-decoration: none; background: transparent; }
+  .contact-links a:hover { background: var(--color-background-secondary); }
+  footer { border-top: 0.5px solid var(--color-border-tertiary); padding: 1.5rem 2rem; text-align: center; font-size: 13px; color: var(--color-text-tertiary); }
+</style>
+
+<nav>
+  <span class="logo">Javier Varela</span>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <p class="tag">CS Student @ USF</p>
+  <h1>Hi, I'm Javier Varela.<br>I like coding.</h1>
+  <p>I'm a computer science student passionate about building clean, thoughtful software. Currently exploring full-stack development and always learning something new.</p>
+  <a class="cta" href="#projects">View my work</a>
+</section>
+
+<hr class="divider">
+
+<section class="about" id="about">
+  <p class="section-label">About</p>
+  <p>I'm currently studying Computer Science at University of South Florida. I enjoy turning ideas into real products — from clean UIs to backend systems. When I'm not coding, I'm watching movies, spending time with family and friends, or gaming.</p>
+  <div class="skills-grid">
+    <span class="skill-tag">HTML / CSS</span>
+    <span class="skill-tag">JavaScript</span>
+    <span class="skill-tag">Python</span>
+    <span class="skill-tag">Git</span>
+    <span class="skill-tag">Node.js</span>
+    <span class="skill-tag">SQL</span>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="projects">
+  <p class="section-label">Projects</p>
+  <div class="projects-grid">
+    <div class="project-card">
+      <p class="proj-label">Project 01</p>
+      <h3>Top Down Shooter</h3>
+      <p>A simple top down shooter made in unity.</p>
+      <div class="proj-stack">
+        <span>C#</span><span>Unity</span>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="contact" id="contact">
+  <p class="section-label">Contact</p>
+  <p>I'm always open to new opportunities, collaborations, or just a good conversation about tech. Feel free to reach out.</p>
+  <div class="contact-links">
+    <a href="mailto:javiervarela1@email.com">Email me</a>
+    <a href="https://github.com/Javier-Varel" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/javier-varela-39ab1b288/" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  Javier Varela· 2025
+</footer>
